@@ -1,6 +1,8 @@
 let array = ['a', 'b', 'c', 'd']
 
-for (let i = 0; i < array.length; i++) {
-  console.log(i)
-  console.log(array[i])
+function recoverC(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i)
+    console.log(arr[i])
+  }
 }
