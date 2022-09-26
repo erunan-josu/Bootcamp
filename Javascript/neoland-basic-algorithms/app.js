@@ -62,3 +62,38 @@ const c = 10
 const m = 5
 const i = c * m
 console.log(i)
+
+// Iteration 4
+const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+console.log(avengers[0])
+avengers[0] = 'IRON MAN'
+console.log(avengers.length)
+
+const newArray = ['Rick', 'Beth', 'Jerry']
+newArray.push('Morty')
+newArray.push('Summer')
+console.log(newArray)
+
+const rickAndMortyCharacters = [
+  'Rick',
+  'Beth',
+  'Jerry',
+  'Morty',
+  'Summer',
+  'Lapiz Lopez',
+]
+rickAndMortyCharacters.splice(-1)
+console.log(
+  'first: ' + rickAndMortyCharacters[0],
+  'last: ' + rickAndMortyCharacters[rickAndMortyCharacters.length - 1]
+)
+const rickAndMortyCharactersTwo = [
+  'Rick',
+  'Beth',
+  'Jerry',
+  'Morty',
+  'Summer',
+  'Lapiz Lopez',
+]
+rickAndMortyCharactersTwo.splice(1, 1)
+console.log(rickAndMortyCharactersTwo)
