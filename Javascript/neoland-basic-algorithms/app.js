@@ -128,3 +128,22 @@ if (number2 / 2 === number1 || number1 / 5 === number3) {
     'number2 entre 2 es igual a number1 o number1 entre 5 es igual a number3'
   )
 }
+
+// Iteration 6
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+}
+
+for (let i = 0; i <= 10; i++) {
+  if (i === 10) {
+    console.log('Dormido')
+  } else {
+    console.log('Intentando dormir')
+  }
+}
