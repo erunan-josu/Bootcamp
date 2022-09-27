@@ -39,7 +39,7 @@ approveAlumns(alumns)
 console.log(alumns)
 
 // Iteration 3
-const placesToTravel = [
+let placesToTravel = [
   'Japon',
   'Venecia',
   'Murcia',
@@ -62,3 +62,21 @@ const alien = {
 for (let data in alien) {
   console.log(alien[data])
 }
+
+// Iteration 5
+placesToTravel = [
+  { id: 5, name: 'Japan' },
+  { id: 11, name: 'Venecia' },
+  { id: 23, name: 'Murcia' },
+  { id: 40, name: 'Santander' },
+  { id: 44, name: 'Filipinas' },
+  { id: 59, name: 'Madagascar' },
+]
+
+for (let i = 0; i < placesToTravel.length; i++) {
+  if (placesToTravel[i].id === 11 || placesToTravel[i].id === 40) {
+    placesToTravel.splice(i, 1)
+  }
+}
+
+console.log(placesToTravel)
