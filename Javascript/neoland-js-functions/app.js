@@ -18,5 +18,4 @@ function findLongestWord(param) {
   param.map((word) => (word.length > longest.length ? (longest = word) : ''))
   return longest
 }
-
 console.log(findLongestWord(avengers))
