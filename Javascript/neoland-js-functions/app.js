@@ -21,8 +21,17 @@ function findLongestWord(param) {
 console.log(findLongestWord(avengers))
 
 // Iteration 3
-const numbers = [1, 2, 3, 5, 45, 37, 58]
+let numbers = [1, 2, 3, 5, 45, 37, 58]
 function sumAll(param) {
   return param.reduce((prev, current) => prev + current)
 }
 console.log(sumAll(numbers))
+
+// Iteration 4
+numbers = [12, 21, 38, 5, 45, 37, 6]
+function average(param) {
+  return Math.floor(
+    param.reduce((prev, current) => prev + current) / numbers.length
+  )
+}
+console.log(average(numbers))
