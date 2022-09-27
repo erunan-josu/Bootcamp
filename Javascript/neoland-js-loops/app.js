@@ -50,3 +50,15 @@ const placesToTravel = [
 for (let place of placesToTravel) {
   console.log(place)
 }
+
+// Iteration 4
+const alien = {
+  name: 'Wormuck',
+  race: 'Cucusumusu',
+  planet: 'Eden',
+  weight: '259kg',
+}
+
+for (let data in alien) {
+  console.log(alien[data])
+}
