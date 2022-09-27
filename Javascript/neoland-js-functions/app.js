@@ -95,3 +95,29 @@ function finderName(array, name) {
   }
 }
 console.log(finderName(nameFinder, 'Xabier'))
+
+//Iteration 8
+const counterWords = [
+  'code',
+  'repeat',
+  'eat',
+  'sleep',
+  'code',
+  'enjoy',
+  'sleep',
+  'code',
+  'enjoy',
+  'upgrade',
+  'code',
+]
+
+function repeatCounter(param) {
+  let obj = {}
+
+  param.forEach((word) => {
+    obj.hasOwnProperty(word) ? (obj[word] += 1) : (obj[word] = 1)
+  })
+  return obj
+}
+
+console.log(repeatCounter(counterWords))
