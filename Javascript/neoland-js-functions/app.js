@@ -61,7 +61,6 @@ const duplicates = [
   'pasta',
   'soda',
 ]
-
 function removeDuplicates(param) {
   let newArray = []
   for (let word of param) {
@@ -70,3 +69,29 @@ function removeDuplicates(param) {
   return newArray
 }
 console.log(removeDuplicates(duplicates))
+
+// Iteration 7
+const nameFinder = [
+  'Peter',
+  'Steve',
+  'Tony',
+  'Natasha',
+  'Clint',
+  'Logan',
+  'Xabier',
+  'Bruce',
+  'Peggy',
+  'Jessica',
+  'Marc',
+]
+function finderName(array, name) {
+  if (array.includes(name)) {
+    console.log(
+      `El nombre ${name} existe en la posicion ${array.indexOf(name)}`
+    )
+    return true
+  } else {
+    return false
+  }
+}
+console.log(finderName(nameFinder, 'Xabier'))
