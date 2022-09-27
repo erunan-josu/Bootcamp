@@ -35,3 +35,14 @@ function average(param) {
   )
 }
 console.log(average(numbers))
+
+// Iteration 5
+const mixedElements = [6, 1, 'vallecano', '10', 'upgrade', 8, 'hub']
+function averageWord(param) {
+  let total = 0
+  mixedElements.map((item) =>
+    typeof item === 'number' ? (total += item) : (total += item.length)
+  )
+  return total
+}
+console.log(averageWord(mixedElements))
