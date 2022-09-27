@@ -37,3 +37,16 @@ function approveAlumns(arr) {
 }
 approveAlumns(alumns)
 console.log(alumns)
+
+// Iteration 3
+const placesToTravel = [
+  'Japon',
+  'Venecia',
+  'Murcia',
+  'Santander',
+  'Filipinas',
+  'Madagascar',
+]
+for (let place of placesToTravel) {
+  console.log(place)
+}
