@@ -125,3 +125,16 @@ const getCount = (arr) => {
 }
 
 console.log(getCount(users))
+
+// Iteration 4
+const animalList = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']
+const onePieceCharacters = ['Luffy', 'Zoro', 'Robin', 'Sanji', 'Nami']
+const consolesList = ['Pc', 'Play Station', 'Xbox', 'Switch']
+
+const findArrayIndex = (array, text) => {
+  return array.indexOf(text)
+}
+
+console.log(findArrayIndex(animalList, 'Salamandra'))
+console.log(findArrayIndex(onePieceCharacters, 'Zoro'))
+console.log(findArrayIndex(consolesList, 'Switch'))
