@@ -148,3 +148,22 @@ console.log(rollDice(4))
 console.log(rollDice(4))
 console.log(rollDice(4))
 console.log('num >= 2', rollDice(4, 2))
+
+// Iteration 6
+const players = [
+  'Mesirve',
+  'Cristiano Romualdo',
+  'Fernando Muralla',
+  'Ronalguiño',
+]
+
+const swap = (array, index1, index2) => {
+  if (index1 > array.length - 1 || index2 > array.length - 1) return
+  const newArray = [...array]
+  const firstItem = newArray[index1]
+  const secondItem = newArray[index2]
+  newArray.splice(index1, 1, secondItem)
+  newArray.splice(index2, 1, firstItem)
+  return newArray
+}
+console.log(swap(players, 3, 0))
