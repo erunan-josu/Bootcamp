@@ -138,3 +138,13 @@ const findArrayIndex = (array, text) => {
 console.log(findArrayIndex(animalList, 'Salamandra'))
 console.log(findArrayIndex(onePieceCharacters, 'Zoro'))
 console.log(findArrayIndex(consolesList, 'Switch'))
+
+// Iteration 5
+const rollDice = (max, min = 1) => {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+console.log(rollDice(4))
+console.log(rollDice(4))
+console.log(rollDice(4))
+console.log('num >= 2', rollDice(4, 2))
