@@ -4,6 +4,7 @@ const pillado = document.querySelector('#pillado')
 const paragraphsAll = document.querySelectorAll('p')
 const pokemonAll = document.querySelectorAll('.pokemon')
 const testMeAll = document.querySelectorAll('[data-function=testMe]')
+
 console.log(showMeBtn)
 console.log(pillado)
 console.log(paragraphsAll.forEach((p) => console.log(p)))
