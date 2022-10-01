@@ -82,7 +82,7 @@ for (let i = 0; i < placesToTravel.length; i++) {
 console.log(placesToTravel)
 
 // Iteration 6
-toys = [
+let toys = [
   { id: 5, name: 'Buzz MyYear' },
   { id: 11, name: 'Action Woman' },
   { id: 23, name: 'Barbie Man' },
@@ -93,6 +93,7 @@ toys = [
 const newArr = []
 
 for (let [i, value] of toys.entries()) {
+  console.log(value.name)
   if (!value.name.includes('gato')) {
     newArr.push(toys.slice(i, i + 1))
   }
