@@ -12,6 +12,7 @@ const foodSchedule = [
   { name: 'Rice', isVegan: true },
   { name: 'Pasta', isVegan: true },
 ]
+
 const veganSchedule = [...foodSchedule]
 
 for (let food of foodSchedule) {
