@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background: #aaa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 45px;
+  grid-template-areas:
+    'icon header header close'
+    'text text text text'
+    'continue cancel - -';
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  width: 480px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  grid-area: icon;
+  color: royalblue;
+  font-size: 26px;
+  font-weight: 700;
+  background: lavender;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  grid-area: header;
+}
+
+.close-button {
+  grid-area: close;
+  background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.text {
+  grid-area: text;
+}
+
+button.continue {
+  grid-area: continue;
+  background: royalblue;
+  border: 1px solid royalblue;
+  color: white;
+}
+
+button.cancel {
+  grid-area: cancel;
+  background: white;
+  border: 1px solid #ddd;
+  color: royalblue;
+}
