@@ -1,0 +1,32 @@
+.footer {
+  background: #f9f9f9;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  gap: 14px;
+}
+.footer div {
+  height: 80%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.footer img {
+  height: 30px;
+}
+
+.footer a {
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  border: 1px solid #f9f9f9;
+}
+
+.footer a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
