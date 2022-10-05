@@ -1,6 +1,6 @@
 import './style.css'
-import githubLogo from '../../public/github.png'
-import linkedinLogo from '../../public/linkedin.png'
+import githubLogo from '../../images/github.png'
+import linkedinLogo from '../../images/linkedin.png'
 
 export const footerComponent = (element) => {
   element.innerHTML += `
