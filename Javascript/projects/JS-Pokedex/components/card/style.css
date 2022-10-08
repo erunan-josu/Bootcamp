@@ -1,0 +1,54 @@
+.main-container .data-container {
+  width: 100%;
+  max-width: 350px;
+}
+
+.main-container .pokmn-container .pokmn-img-container {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  border-radius: 5px;
+  position: relative;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+
+.main-container .pokmn-img-container .pkmn-img {
+  height: 100%;
+}
+
+.main-container .details {
+  position: relative;
+  border: 1px solid #333;
+  padding: 2rem 1rem;
+}
+
+.main-container .details h1 {
+  padding: 0rem 1rem;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  background: var(--background);
+  font-size: 23px;
+}
+
+.main-container .details .details-row {
+  padding: 0rem 1rem;
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.main-container .details .details-row .types {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-container .details .details-row .types .type {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}

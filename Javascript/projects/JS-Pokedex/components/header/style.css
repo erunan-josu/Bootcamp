@@ -1,0 +1,18 @@
+.header {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--yellow);
+  background: var(--primary);
+}
+
+header img {
+  position: absolute;
+  left: 2rem;
+  bottom: -26px;
+  height: 100px;
+}
