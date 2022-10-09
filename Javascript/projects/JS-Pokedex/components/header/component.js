@@ -5,10 +5,10 @@ export const headerComponent = `
         <img src='${logo}' alt='pokemon logo'>
         <ul class='links-container'>
             <li>
-                <a href='#'>github</a>
+                <a href='https://github.com/erunan-josu/Bootcamp/tree/main/Javascript/projects/JS-Pokedex' target='_blank'>github</a>
             </li>
             <li>
-                <a href='#'>Linkedin</a>
+                <a href='https://www.linkedin.com/in/josu-hernandez/' target='_blank'>Linkedin</a>
             </li>
         </ul>
     </header>
