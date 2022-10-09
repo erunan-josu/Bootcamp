@@ -18,6 +18,10 @@ export const pokemonCardComponent = (obj) => {
               <p>Weigth: ${weight}kg</p>
             </div>
           </div>
+          <div class='details-row stats-row'>
+            <p>Stats:</p>
+            <ul id='stats' class='stats'></ul>
+          </div>
         </div>
     </div>
     `

@@ -5,6 +5,7 @@ import { searchbarComponent } from './components/searchbar/component'
 import { mainComponent } from './components/mainElement/component'
 import { pokemonCardComponent } from './components/card/component'
 import { typeComponent } from './components/type/component'
+import { statComponent } from './components/stat/component'
 import { addAllEvents } from './Events/addAllEvents'
 
 // get all names from generation 1
@@ -27,7 +28,7 @@ const cleanData = (raw) => {
   // get clean stats array of obj
   const statsArray = stats.map((item) => {
     return {
-      stat: item.stat.name,
+      name: item.stat.name,
       effort: item.effort,
       base_stat: item.base_stat,
     }
@@ -47,15 +48,17 @@ const cleanData = (raw) => {
   }
 }
 
-const printPkmnCard = (pokemon) => {
+export const printPkmnCard = (pokemon) => {
   const main = document.querySelector('#main-cont')
   main.innerHTML += pokemonCardComponent(pokemon)
   pokemon.types.forEach((type) => {
     console.log('tupe', type)
     document.querySelector('#types').innerHTML += typeComponent(type)
   })
-  console.log(main)
-  console.log(pokemon)
+  pokemon.stats.forEach((stat) => {
+    console.log(stat)
+    document.querySelector('#stats').innerHTML += statComponent(stat)
+  })
 }
 
 const init = async () => {
