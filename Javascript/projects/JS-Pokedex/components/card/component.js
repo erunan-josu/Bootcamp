@@ -1,11 +1,10 @@
 import './style.css'
 
 export const pokemonCardComponent = (obj) => {
-  console.log(obj)
-  const { order, name, height, weight, sprites } = obj
+  const { id, name, height, weight, sprites } = obj
   return `
   <div class='pkmn-card' id='pkmn-card'>
-    <h1>#${order} - ${name}</h1>
+    <h1>#${id} - ${name}</h1>
         <div class='pkmn-img-container'>
             <img class='pkmn-img' id='pkmn-img' src='${sprites.front}' alt='pokemon image'>
         </div>

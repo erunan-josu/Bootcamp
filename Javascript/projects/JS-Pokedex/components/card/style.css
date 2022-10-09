@@ -1,7 +1,5 @@
 .pkmn-card {
   position: relative;
-  width: 100%;
-  max-width: 350px;
   border: 1px solid var(--primary);
   padding: 2rem;
   border-radius: 5px;
@@ -13,6 +11,7 @@
 }
 
 .pkmn-card h1 {
+  color: var(--primary);
   position: absolute;
   top: -18px;
   padding: 0 1rem;
@@ -62,4 +61,10 @@
   top: -15px;
   padding: 0 0.5rem;
   background: var(--background);
+}
+
+@media screen and (max-width: 850px) {
+  .pkmn-card {
+    margin-bottom: 4rem;
+  }
 }
