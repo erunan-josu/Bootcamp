@@ -14,6 +14,5 @@ export const getData = async () => {
 export const getDataByName = async (name) => {
   const response = await fetch(`${baseUrl}${name}`)
   const data = await response.json()
-  console.log(data)
   return data
 }

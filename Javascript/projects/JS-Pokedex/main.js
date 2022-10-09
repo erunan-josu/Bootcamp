@@ -3,6 +3,8 @@ import { getData, getDataByName } from './services/api'
 import { headerComponent } from './components/header/component'
 import { searchbarComponent } from './components/searchbar/component'
 import { mainComponent } from './components/mainElement/component'
+import { pokemonCardComponent } from './components/card/component'
+import { typeComponent } from './components/type/component'
 import { addAllEvents } from './Events/addAllEvents'
 
 // get all names from generation 1
@@ -16,7 +18,6 @@ export const getPokemon = async (array, name) => {
   if (!array.includes(name)) return
   const rawData = await getDataByName(name)
   const pokemon = cleanData(rawData)
-  console.log(pokemon)
   return pokemon
 }
 
@@ -46,13 +47,24 @@ const cleanData = (raw) => {
   }
 }
 
+const printPkmnCard = (pokemon) => {
+  const main = document.querySelector('#main-cont')
+  main.innerHTML += pokemonCardComponent(pokemon)
+  pokemon.types.forEach((type) => {
+    console.log('tupe', type)
+    document.querySelector('#types').innerHTML += typeComponent(type)
+  })
+  console.log(main)
+  console.log(pokemon)
+}
+
 const init = async () => {
   document.querySelector('#app').innerHTML += headerComponent
   document.querySelector('#app').innerHTML += searchbarComponent
   document.querySelector('#app').innerHTML += mainComponent
   const data = await getAllNames()
-  const pokemon = getPokemon(data, 'bulbasaur')
-  console.log(pokemon)
+  const pokemon = await getPokemon(data, 'bulbasaur')
+  printPkmnCard(pokemon)
   addAllEvents()
 }
 init()
