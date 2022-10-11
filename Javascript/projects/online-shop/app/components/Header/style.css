@@ -1,0 +1,55 @@
+.logo-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.logo-cont #logo {
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.logo-cont p {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+nav {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+nav ul li {
+  color: var(--red);
+  cursor: pointer;
+}
+
+nav ul .cart {
+  width: 100px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+}
+
+nav ul .cart .cart-btn {
+  height: 20px;
+}

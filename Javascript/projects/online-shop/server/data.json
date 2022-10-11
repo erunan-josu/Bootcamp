@@ -1,0 +1,100 @@
+{
+  "laptops": [
+    {
+      "id": 1,
+      "brand": "asus",
+      "name": "Asus ROG strix G15",
+      "screen": 15.6,
+      "core": "AMD",
+      "core_model": "ryzen 7 4800H",
+      "ram": 16,
+      "storage": "512GB SSD",
+      "graphycs": "RTX 3060",
+      "weight": 2.1,
+      "price": 1229,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+      }
+    },
+    {
+      "id": 2,
+      "brand": "asus",
+      "name": "Asus ROG strix G15",
+      "screen": 15.6,
+      "core": "AMD",
+      "core_model": "ryzen 9 6800HX",
+      "ram": 32,
+      "storage": "1TB SSD",
+      "graphycs": "RTX 3080",
+      "weight": 2.3,
+      "price": 2299,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+      }
+    },
+    {
+      "id": 3,
+      "brand": "asus",
+      "name": "Asus ROG strix G15",
+      "screen": 15.6,
+      "core": "AMD",
+      "core_model": "ryzen 7 6800H",
+      "ram": 16,
+      "storage": "1TB SSD",
+      "graphycs": "RTX 3060",
+      "weight": 2.3,
+      "price": 1199,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+      }
+    },
+    {
+      "id": 4,
+      "brand": "asus",
+      "name": "Asus ROG strix G15",
+      "screen": 15.6,
+      "core": "AMD",
+      "core_model": "ryzen 7 4800H",
+      "ram": 16,
+      "storage": "512GB SSD",
+      "graphycs": "RTX 3050",
+      "weight": 2.1,
+      "price": 907,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+      }
+    },
+    {
+      "id": 5,
+      "brand": "asus",
+      "name": "Asus ROG strix G15",
+      "screen": 15.6,
+      "core": "AMD",
+      "core_model": "ryzen 7 4800H",
+      "ram": 16,
+      "storage": "512GB SSD",
+      "graphycs": "RTX 3050",
+      "weight": 2.1,
+      "price": 907,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+      }
+    },
+    {
+      "id": 6,
+      "brand": "asus",
+      "name": "Asus ROG Zephyrus M16",
+      "screen": 16,
+      "core": "Intel",
+      "core_model": "core i9-12900H",
+      "ram": 32,
+      "storage": "1TB SSD",
+      "graphycs": "RTX 3070ti",
+      "weight": 2,
+      "price": 2499,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480780/online-shop/zephyrus_ibdiw5.webp"
+      }
+    }
+  ]
+}

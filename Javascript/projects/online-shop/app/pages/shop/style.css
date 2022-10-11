@@ -1,0 +1,16 @@
+main {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+}
+
+main .card-section {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+main .shop-list-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
