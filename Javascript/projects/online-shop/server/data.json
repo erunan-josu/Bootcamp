@@ -38,12 +38,12 @@
       "name": "Asus ROG strix G15",
       "screen": 15.6,
       "core": "AMD",
-      "core_model": "ryzen 7 6800H",
+      "core_model": "ryzen 7 4800H",
       "ram": 16,
-      "storage": "1TB SSD",
-      "graphycs": "RTX 3060",
-      "weight": 2.3,
-      "price": 1199,
+      "storage": "512GB SSD",
+      "graphycs": "RTX 3050",
+      "weight": 2.1,
+      "price": 907,
       "images": {
         "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
       }
@@ -51,33 +51,33 @@
     {
       "id": 4,
       "brand": "asus",
-      "name": "Asus ROG strix G15",
+      "name": "Asus TUF Gaming F15",
       "screen": 15.6,
-      "core": "AMD",
-      "core_model": "ryzen 7 4800H",
+      "core": "Intel",
+      "core_model": "core i5-10300H",
       "ram": 16,
       "storage": "512GB SSD",
-      "graphycs": "RTX 3050",
-      "weight": 2.1,
-      "price": 907,
+      "graphycs": "GTX 1650",
+      "weight": 2.3,
+      "price": 649,
       "images": {
-        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665596351/online-shop/tuf_mevf1a.webp"
       }
     },
     {
       "id": 5,
       "brand": "asus",
-      "name": "Asus ROG strix G15",
-      "screen": 15.6,
-      "core": "AMD",
-      "core_model": "ryzen 7 4800H",
+      "name": "Asus ROG Flow Z13",
+      "screen": 13.4,
+      "core": "Intel",
+      "core_model": "core i9-12900H",
       "ram": 16,
-      "storage": "512GB SSD",
-      "graphycs": "RTX 3050",
-      "weight": 2.1,
-      "price": 907,
+      "storage": "1TB SSD",
+      "graphycs": "RTX 3050ti",
+      "weight": 1.2,
+      "price": 3599,
       "images": {
-        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480690/online-shop/asus_xrzoxv.webp"
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665596798/online-shop/flow_ipfdqz.webp"
       }
     },
     {
@@ -94,6 +94,38 @@
       "price": 2499,
       "images": {
         "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480780/online-shop/zephyrus_ibdiw5.webp"
+      }
+    },
+    {
+      "id": 7,
+      "brand": "asus",
+      "name": "Asus ROG Zephyrus M16",
+      "screen": 16,
+      "core": "Intel",
+      "core_model": "core i9-12900H",
+      "ram": 32,
+      "storage": "2TB SSD",
+      "graphycs": "RTX 3080ti",
+      "weight": 2,
+      "price": 3499,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665480780/online-shop/zephyrus_ibdiw5.webp"
+      }
+    },
+    {
+      "id": 8,
+      "brand": "asus",
+      "name": "Asus ROG Zephyrus Duo M16",
+      "screen": 16,
+      "core": "AMD",
+      "core_model": "ryzen 9 6900HX",
+      "ram": 64,
+      "storage": "4TB SSD",
+      "graphycs": "RTX 3080ti",
+      "weight": 2.6,
+      "price": 5649,
+      "images": {
+        "front": "https://res.cloudinary.com/dieasyxbw/image/upload/v1665597263/online-shop/duo_kedpw7.webp"
       }
     }
   ]

@@ -12,4 +12,5 @@
 
 .cart-item .cart-del-btn {
   height: 50%;
+  cursor: pointer;
 }
