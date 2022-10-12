@@ -10,24 +10,20 @@ export const cartPage = () => {
   ShoppingBox()
 
   const cartItems = JSON.parse(localStorage.getItem('myCart'))
-
   if (cartItems.length <= 0) {
     showMsg('Your box is empty')
   } else {
-    const totalPrice = cartItems
-      .map((item) => item.price)
-      .reduce((a, b) => a + b)
-
-    const span = document.querySelector('.total-price')
-    span.textContent = totalPrice
-
-    printItem(cartItems)
+    printItems(cartItems)
     deleteItem()
     buyEvent()
   }
 }
 
-const printItem = (array) => {
+const printItems = (array) => {
+  const totalPrice = array.map((item) => item.price).reduce((a, b) => a + b)
+  const span = document.querySelector('.total-price')
+  span.textContent = totalPrice
+
   if (array.length > 0) {
     const cartList = document.querySelector('.list-container')
     array.forEach((item) => {
@@ -49,11 +45,11 @@ const deleteItem = () => {
           index = key
         }
       }
+
       storageItems.splice(index, 1)
       localStorage.setItem('myCart', JSON.stringify(storageItems))
 
       updateCounter()
-
       cartPage()
     })
   })

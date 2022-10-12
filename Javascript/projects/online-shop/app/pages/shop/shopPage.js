@@ -44,7 +44,6 @@ const printCard = (item) => {
   const addBtn = document.querySelector('.add-btn')
 
   addBtn.addEventListener('click', () => {
-    const cartCounter = document.querySelector('.cart-counter')
     const localItems = JSON.parse(localStorage.getItem('myCart'))
     localItems.push(item)
     localStorage.setItem('myCart', JSON.stringify(localItems))
