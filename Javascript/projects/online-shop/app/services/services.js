@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/'
+const baseUrl = 'https://asus-laptops-server.onrender.com/'
 
 export const getData = async (param) => {
   try {
