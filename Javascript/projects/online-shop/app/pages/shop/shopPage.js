@@ -4,8 +4,9 @@ import { getRandomNum } from '../../utils/getRandomNum'
 import { getData } from '../../services/services'
 import { Card } from '../../components/Card/Card'
 import { ShopItem } from '../../components/ShopItem/ShopItem'
+import { updateCounter } from '../../utils/updateCounter'
 let itemList = []
-let cartList = []
+export let cartList = []
 export const shopPage = async () => {
   const app = document.querySelector('#app')
   cleanContainer(app)
@@ -27,25 +28,27 @@ export const shopPage = async () => {
   seeMoreEvent()
 }
 
-const getItem = (array, i) => {
-  return array.filter((item) => item.id === i)[0]
-}
-
 const printCardSection = (list) => {
   const randomNum = getRandomNum(0, list.length)
   printCard(list[randomNum])
 }
 
+const getItem = (array, i) => {
+  return array.filter((item) => item.id === i)[0]
+}
+
 const printCard = (item) => {
   const cardSection = document.querySelector('.card-section')
   cardSection.innerHTML += Card(item)
+
   const addBtn = document.querySelector('.add-btn')
 
   addBtn.addEventListener('click', () => {
     const cartCounter = document.querySelector('.cart-counter')
-    cartList.push(item)
-    localStorage.setItem('myCart', JSON.stringify(cartList))
-    cartCounter.textContent = JSON.parse(localStorage.getItem('myCart')).length
+    const localItems = JSON.parse(localStorage.getItem('myCart'))
+    localItems.push(item)
+    localStorage.setItem('myCart', JSON.stringify(localItems))
+    updateCounter()
   })
 }
 

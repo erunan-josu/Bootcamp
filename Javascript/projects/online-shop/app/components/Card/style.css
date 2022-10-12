@@ -1,7 +1,8 @@
 .laptop-card {
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .laptop-card legend {
@@ -10,7 +11,8 @@
 }
 
 .laptop-card img {
-  width: 40%;
+  width: 300px;
+  height: 350px;
 }
 
 .laptop-card .details-card {
@@ -26,6 +28,7 @@
 
 .laptop-card .details-card p {
   margin-bottom: 1rem;
+  width: auto;
 }
 .laptop-card .details-card .add-btn {
   cursor: pointer;
@@ -34,4 +37,17 @@
   font-size: 1.2rem;
   background: var(--red);
   color: #f9f9f9;
+}
+
+@media screen and (max-width: 720px) {
+  .laptop-card {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .laptop-card .details-card {
+    width: 100%;
+    border-left: none;
+    padding: 2rem;
+  }
 }

@@ -9,3 +9,7 @@
 .cart-item .cart-item-img {
   height: 100%;
 }
+
+.cart-item .cart-del-btn {
+  height: 50%;
+}

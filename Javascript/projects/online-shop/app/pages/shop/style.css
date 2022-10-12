@@ -13,4 +13,17 @@ main .shop-list-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  main {
+    padding: 1rem;
+  }
 }

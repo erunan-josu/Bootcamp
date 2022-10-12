@@ -1,0 +1,26 @@
+.shopping-box {
+  padding: 2rem;
+}
+
+.shopping-box .list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.shopping-box .total-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopping-box .total-container p {
+  display: flex;
+  align-items: flex-end;
+}
+
+.shopping-box .total-container button {
+  padding: 1rem 2rem;
+  background: var(--red);
+  color: #f9f9f9;
+}
